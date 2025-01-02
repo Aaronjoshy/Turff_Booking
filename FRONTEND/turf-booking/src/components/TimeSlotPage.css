@@ -1,0 +1,94 @@
+/* General Page Styling */
+.time-slot-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background: #fff; /* Gradient background */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Title Styling */
+h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Input Field Styling */
+.input-field {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #444;
+  appearance: none; /* Removes default dropdown arrow for a custom look */
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gray"><path d="M7 10l5 5 5-5H7z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus Effect on Inputs */
+.input-field:focus {
+  border-color: #3498db; /* Highlighted border on focus */
+  outline: none;
+}
+
+/* Labels Styling */
+label {
+  font-size: 1rem;
+  color: #fff;
+  margin: 10px 0;
+  font-weight: 600;
+  display: block;
+}
+
+/* Button Styling */
+.book-button {
+  background-color: #3498db;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.book-button:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .time-slot-page {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .input-field {
+    font-size: 0.95rem;
+  }
+
+  .book-button {
+    font-size: 1rem;
+  }
+}
